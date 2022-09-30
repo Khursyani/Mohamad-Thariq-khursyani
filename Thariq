@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package percabangan1;
+import java.util.Scanner;
+/**
+ *
+ * @author ASUS
+ */
+public class PernyataanSWITCH2 {
+    public static void main(String[] args) {
+        Scanner angka = new Scanner(System.in);
+        int hari;
+        int pilihan = 0;
+        
+        System.out.println("========================");
+        System.out.println("Silahkan Masukan Hari");
+        hari = angka.nextInt();
+        
+        switch(hari){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:System.out.println("Hari Kerja");
+            break;
+            case 6:
+            case 7:System.out.println("Hari Libur");
+            break;
+            default:System.out.println("Silahkan Pilih Hari");
+        }
+    }
+}
